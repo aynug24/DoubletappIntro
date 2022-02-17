@@ -9,6 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.DoubletappInto">
+        <activity
+                android:name=".SquareActivity"
+                android:label="@string/title_activity_square"
+                android:theme="@style/Theme.DoubletappInto.NoActionBar">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
