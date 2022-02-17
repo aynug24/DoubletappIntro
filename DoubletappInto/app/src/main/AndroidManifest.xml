@@ -9,12 +9,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.DoubletappInto">
+        <activity android:name=".SquaredActivity">
+        </activity>
         <activity
                 android:name=".SquareActivity"
+                android:exported="false"
                 android:label="@string/title_activity_square"
                 android:theme="@style/Theme.DoubletappInto.NoActionBar">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+                android:name=".MainActivity"
+                android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|density|screenSize|smallestScreenSize"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
